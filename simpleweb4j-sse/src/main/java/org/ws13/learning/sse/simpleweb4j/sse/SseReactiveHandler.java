@@ -45,9 +45,11 @@ public class SseReactiveHandler extends ReactiveEventSourceTask {
         writer.flush();
 
         continuation.getServletResponse().flushBuffer();
+
       } catch (IOException e) {
         continuation.complete();
         throw new EndOfStreamException(e);
+
       }
 
     } else {
