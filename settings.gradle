@@ -1,2 +1,2 @@
-include 'simpleweb4j-sse'
+include 'simpleweb4j-sse', 'undertow-sse'
 

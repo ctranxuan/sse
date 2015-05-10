@@ -1,0 +1,7 @@
+project(':undertow-sse') {
+  dependencies {
+    compile 'io.undertow:undertow-core:1.2.5.Final'
+    compile "org.slf4j:slf4j-api:1.7.12"
+    compile "ch.qos.logback:logback-classic:1.1.3"
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : logback-dev.xml
+    Created on : October 3, 2012, 10:18 AM
+    Author     : leonidas patouchas
+    Description:
+        Purpose of the document follows.
+-->
+<configuration>
+  <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>%d %p [%c] - &lt;%m&gt;%n</Pattern>
+    </layout>
+  </appender>
+
+  <logger name="org.ws13" level="INFO" />
+
+  <root level="INFO">
+    <appender-ref ref="stdout"/>
+  </root>
+</configuration>
