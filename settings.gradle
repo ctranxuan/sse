@@ -1,2 +1,3 @@
 include 'simpleweb4j-sse', 'undertow-sse'
+include 'spring-sse'
 
