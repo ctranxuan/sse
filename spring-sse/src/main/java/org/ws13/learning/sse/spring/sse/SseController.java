@@ -25,9 +25,9 @@ public class SseController {
 
   @RequestMapping("/sse")
   public SseEmitter sse() {
-    SseEmitter emitter = new SseEmitter();
+    final SseEmitter emitter = new SseEmitter();
 
-    Observable.interval(10, TimeUnit.SECONDS, Schedulers.io())
+    Observable.interval(5, TimeUnit.SECONDS, Schedulers.io())
         .subscribe(new Subscriber<Long>() {
           @Override
           public void onCompleted() {
